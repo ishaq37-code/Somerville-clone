@@ -25,3 +25,32 @@ vedioBtn.addEventListener("click", () => {
     playbtn.style.display="inline-flex";
  }
 });
+
+const menuAnmi= gsap.timeline({
+  paused:true,
+  defaults:{duration:0.5 , opacity:1 }
+
+});
+menuAnmi.from("nav",{
+   y:50,
+   duration:1,
+   opacity:0,
+   
+});
+menuAnmi.from(".contact-info",{
+   y:70,
+  
+   duration:1,
+   opacity:0
+});
+menuAnmi.from(".canvas-button ",{
+   y:70,
+  
+   duration:1,
+   opacity:0
+});
+let menuc= false;
+
+menubtn.addEventListener("click",()=>{
+ menuAnmi.restart();
+})
