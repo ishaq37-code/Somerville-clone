@@ -289,7 +289,7 @@ header .logo h2  a{
     left: -100%;
 }
 
-.wrapper .canvas-button button {
+.wrapper .canvas-button button{
     padding: 1rem 2.5rem;
     border-radius: 6rem;
     border: 1px solid #41444B;
@@ -300,13 +300,17 @@ header .logo h2  a{
     cursor: pointer;
     transition: .5s;
 }
-
+.canvas-button button a{
+    color: var(--bg-color);
+}
 .wrapper .canvas-button button:hover {
     color: var(--bg-cont-color);
     background-color: var(--bg-color);
     border: 1px solid #41444B;
 }
-
+.wrapper .canvas-button button:hover a{
+    color: var(--bg-cont-color);
+}
 .home {
     width: 95%;
     min-height: 70vh;
@@ -411,9 +415,7 @@ header .logo h2  a{
     min-height: 100vh;
     width: 100%;
     padding: 1rem 4rem;
-    position: relative;
-
-
+   
     margin-top: 10rem;
 }
 
@@ -1105,7 +1107,7 @@ footer .copyright p::before{
         padding: 5rem 1rem;
         position: relative;
 
-        z-index: 100;
+       
         margin-top: 2rem;
     }
 
