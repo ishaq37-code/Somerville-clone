@@ -26,27 +26,27 @@ vedioBtn.addEventListener("click", () => {
  }
 });
 
-const menuAnmi= gsap.timeline({
-  paused:true,
-  defaults:{duration:0.5 , opacity:1 }
+const menuAnmi= gsap.timeline(
 
-});
-menuAnmi.from("nav",{
+)
+menuAnmi.pause()
+menuAnmi.from(".off-canvas .wrapper nav ",{
    y:50,
-   duration:1,
+   duration:0.3,
    opacity:0,
-   
+   stagger:1
 });
+
 menuAnmi.from(".contact-info",{
    y:70,
   
-   duration:1,
+  
    opacity:0
 });
 menuAnmi.from(".canvas-button ",{
    y:70,
   
-   duration:1,
+  
    opacity:0
 });
 let menuc= false;
