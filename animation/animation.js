@@ -7,11 +7,12 @@ const menuAnmi= gsap.timeline(
 
 )
 menuAnmi.pause()
-menuAnmi.from(".off-canvas .wrapper nav ",{
-   y:50,
-   duration:0.3,
-   opacity:0,
-   stagger:1
+menuAnmi.from(".off-canvas nav ", {
+  y: 40,
+  opacity: 0,
+  duration: 0.6,
+  
+  ease: "power3.out"
 });
 
 menuAnmi.from(".contact-info",{
@@ -35,3 +36,5 @@ menubtn.addEventListener("click",()=>{
 closebtn.addEventListener("click",()=>{
     offcanvas.classList.remove("active")
 });
+const naa= document.querySelector(".off-canvas .wrapper nav a")
+console.log(naa)

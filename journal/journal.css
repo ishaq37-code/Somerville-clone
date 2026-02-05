@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "main";
+   color: var(--bg-cont-color);
+}
+header{
+    background-color: var(--bg-cont-color);
+}
+:root {
+    --bg-color: #FFFCF5;
+    --bg-cont-color: #262324;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+
+}
+.journal{
+    padding: 1rem 4rem;
+    margin: 2rem 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.journal h1{
+font-size: 2.5rem;
+font-weight: 700;
+margin-bottom: 1rem;
+}
+.journal .parag{
+    font-size: 1.1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: .1rem solid rgba(128, 128, 128, 0.568);
+}
+.journal-btn{
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+
+}
+.journal-btn a{
+    padding: 1rem 2rem;
+    background-color: #eceae0;
+    border-radius: 8rem;
+}
+.journal-btn a.active{
+    background-color: black;
+    color: var(--bg-color);
+}
+.project-tab-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eceae0;
+    border-radius: .9rem;
+ margin: 2rem 0;
+    padding: 2rem;
+}
+.project-tab-con .image-areaa{
+    width: 45%;
+    height: 16rem;
+    overflow: hidden;
+    border-radius: .9rem;
+    position: relative;
+    cursor: pointer;
+}
+.image-areaa img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+
+}
+.image-areaa a{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding:  0.5rem;
+    border-radius: 50%;
+    background-color:var(--bg-cont-color) ;
+     display: inline;
+     transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+.image-areaa a i{
+    color: var(--bg-color);
+   transition: .5s
+}
+.image-areaa:hover a{
+    background-color: red; 
+
+}
+.image-areaa:hover a i{
+    color: white;
+}
+.image-areaa:hover img{
+    transform: scale(1.1);
+}
+.project-tab-con .tab-content{
+    width: 40%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.tab-content h2{
+    cursor: pointer;
+}
+.journal-tab-cont{
+    display: flex;
+  
+    justify-content: space-around;
+
+}
+.journal-tab-cont .journal-tab-box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.journal-tab-box .image-box-tab{
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: .8rem;
+    position: relative;
+  cursor: pointer;
+}
+.image-box-tab img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.image-box-tab a{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding:  0.5rem;
+    border-radius: 50%;
+    background-color:var(--bg-cont-color) ;
+     display: inline;
+     transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+.image-box-tab a i{
+    color: var(--bg-color);
+   transition: .5s
+}
+.image-box-tab:hover img{
+    transform: scale(1.1);
+
+}
+.image-box-tab:hover a {
+    background-color: red;
+}

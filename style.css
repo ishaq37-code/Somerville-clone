@@ -89,7 +89,7 @@ header {
     justify-content: start;
     gap: 3rem;
     flex-direction: column;
-    transition: .1s ease;
+    transition: .3s ease;
 
 }
 
@@ -184,6 +184,7 @@ header .logo h2  a{
     border: 1px solid var(--bg-cont-color);
     border-radius: 50%;
     background-color: var(--bg-cont-color);
+    cursor: pointer;
 }
 
 .wrapper .close:hover {
@@ -204,7 +205,7 @@ header .logo h2  a{
     transition: .5s;
 }
 
-.wrapper .close i:hover {
+.wrapper .close:hover i {
 
     color: var(--bg-cont-color);
     transform: rotate(350deg);
@@ -218,13 +219,14 @@ header .logo h2  a{
 }
 
 .wrapper nav a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     position: relative;
     overflow: hidden;
     color: #262324a2;
     transition: .3s;
     width: fit-content;
+    margin-bottom: 0.3rem;
 
 }
 
